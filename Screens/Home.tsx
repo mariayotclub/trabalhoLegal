@@ -24,7 +24,7 @@ export default function Home(){
       source={require('../assets/amarelo.jpg')} 
       style={styles.container2}
     >
-            <Button title="Sair (logout)" onPress={deslogar} color="#FF3B30" />
+            <Button style={styles.botao} title="Sair (logout)" onPress={deslogar}  />
 
       <View style={{alignItems: 'center', justifyContent: 'center', marginTop: 40, marginBottom: 5, }}>
         <Text style={{fontSize: 30, fontWeight: 'bold', color: '#ffffffff', marginBottom: 5, alignItems: 'center',justifyContent: 'center', }}> Discografia do NJZ</Text>
@@ -82,17 +82,16 @@ export default function Home(){
   );
 }
 const styles = StyleSheet.create({
-  container11: { flex: 1, alignItems: 'center', justifyContent: 'center' },
  container: {
     flex: 1,
     backgroundColor: '#ffc3c3ff00',
-    alignItems: 'center',     //horizontal
-    justifyContent: 'center', //vertical
+    alignItems: 'center',     
+    justifyContent: 'center', 
     flexDirection: 'column',
-    flexWrap: 'wrap',         //quebra em linhas ou colunas
+    flexWrap: 'wrap',       
     alignContent: 'space-evenly',
     rowGap: 20,
-    //columnGap: 30
+
   },
   container2: {
     flex: 1,
@@ -124,7 +123,7 @@ const styles = StyleSheet.create({
   },
   texto: {
     fontSize: 5,
-    color: '#ffffffff',
+    color: 'rgb(58, 88, 253)',
     fontWeight: 700
   },
 
@@ -134,5 +133,8 @@ const styles = StyleSheet.create({
    alignItems: 'center', 
    justifyContent: 'center', 
    borderRadius: 5
+  },
+  botao:{
+
   }
 });
