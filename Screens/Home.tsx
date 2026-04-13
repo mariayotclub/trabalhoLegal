@@ -24,7 +24,7 @@ export default function Home(){
       source={require('../assets/amarelo.jpg')} 
       style={styles.container2}
     >
-            <Button style={styles.botao} title="Sair (logout)" onPress={deslogar}  />
+            <Button title="Sair (logout)" onPress={deslogar}  />
 
       <View style={{alignItems: 'center', justifyContent: 'center', marginTop: 40, marginBottom: 5, }}>
         <Text style={{fontSize: 30, fontWeight: 'bold', color: '#ffffffff', marginBottom: 5, alignItems: 'center',justifyContent: 'center', }}> Discografia do NJZ</Text>
